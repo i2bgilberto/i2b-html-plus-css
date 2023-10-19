@@ -18,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Web Style -->
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
@@ -26,16 +25,24 @@
 
 <body>
     <header>
-        <nav class="collapsible nav">
-            <a title="logo" class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
-            <svg class="icon icon--white   nav__toggler">
-                <use xlink:href="images/sprite.svg#menu"></use>
+        <nav class="nav collapsible">
+            <a aria-label="Moshify" class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+            <svg class="icon icon--white nav__toggler">
+                <use href="images/sprite.svg#menu"></use>
             </svg>
-            <ul class="collapsible__content list nav__list">
-                <li class="nav__item"><a href="#">Hosting</a></li>
-                <li class="nav__item"><a href="#">VPS</a></li>
-                <li class="nav__item"><a href="#">Domain</a></li>
-                <li class="nav__item"><a href="#">Pricing</a></li>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item">
+                    <a target="_blank" href="#">Hosting</a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="#">VPS</a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="#">Domain</a>
+                </li>
+                <li class="nav__item">
+                    <a target="_blank" href="#">Pricing</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -59,7 +66,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, magni.</p>
         </header>
         <div class="input-group">
-            <input type="text" class="input" placeholder="Enter domain name here">
+            <input aria-label="Enter domain here" type="text" class="input" placeholder="Enter domain name here">
             <button class="btn btn--accent">
                 <svg class="icon icon--white">
                     <use xlink:href="images/sprite.svg#search"></use>
